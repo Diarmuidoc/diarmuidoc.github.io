@@ -1,0 +1,275 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+  scroll-padding-top: 70px; /* height of sticky header */
+}
+
+.navbarTop{
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	background-color:white;
+	z-index: 10;
+}
+
+
+.navbar{
+  text-align: center;
+}
+
+@media only screen and (min-width: 991px){
+  .navbar-brand {
+    position: absolute;
+    left: 46%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+  }
+}
+
+.postNav{
+	padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+.marginTop{
+  margin-top: 2em;;
+}
+
+.parSpace{
+  padding-top: 2em;
+}
+
+.postSpace{
+  padding-bottom: 2em;
+}
+
+.logoImg{
+  height: 2em;
+}
+
+/*
+.container{
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-right: auto;
+  margin-left: auto;
+}
+*/
+/*
+.fade-in{
+  animation: fadeIn 4s;
+}
+
+@keyframes fadeIn{
+  0%{ opacity: 0;}
+  100%{ opacity: 1;}
+}*/
+
+
+.scrollFade {
+  opacity: 1;
+  pointer-events: all;
+}
+.scrollFade--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.scrollFade--visible {
+  opacity: 1;
+  pointer-events: all;
+}
+.scrollFade--animate {
+  transition: opacity 0.4s ease-in-out;
+}
+
+
+
+.postImage{
+  padding-top: 2em;
+}
+
+.aboutImg img{
+  float: right;
+}
+
+.gallery-item{
+
+}
+
+.ratio-16x9 {
+  --bs-aspect-ratio: 56.25%;
+}
+
+@media only screen and (max-width: 991px){
+  /* Test for at media making page smaller
+  body {
+    background-color: lightblue;
+  }
+  */
+  .aboutImg img{
+    float: none;
+    width: 100%;
+  }
+}
+.cvBody{
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.aboutList{
+  list-style-type: circle;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.aboutList li{
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.cvList{
+  list-style-type: square;
+}
+
+.topBackground{
+  height: 100vh;
+  background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.topBackgroundReplace{
+  height:2vh;
+}
+
+.personalArea{
+  background-color: green;
+}
+
+.aboutMe{
+  /* white-space: nowrap; */
+  overflow: hidden;
+}
+
+.backText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cvText{
+  border-left: 0.25rem solid green; 
+}
+
+.cvText br{
+  line-height: 200%;
+}
+
+.blockquote-footer{
+  line-height: 2;
+}
+
+.gallery img{
+  
+}
+
+.gallery-item{
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.gallery .gallery-item:hover img {
+  transition: all 0.8s ease-in-out;
+  transform: scale(1.2);
+}
+
+.gallery-item img{
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio:1/1;
+}
+
+.accordion{
+  --bs-accordion-active-bg: rgba(20, 202, 50, 0.432); /* Main background for accordion*/
+  --bs-accordion-border-color: green; /* bars seperating acordion */
+  --bs-accordion-btn-focus-border-color: yellow; /*nothing happening, not sure where affected*/
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(81, 253, 13, 0.25); /* padding around the background */
+}
+
+.accImg{
+  width: 100%;
+  min-height: 200px;
+}
+
+.footer a:link {
+  color: black;
+}
+
+#footer{
+  padding: 2em;
+  text-align: center;
+}
+
+/* Carousel from example online at https://mdbootstrap.com/snippets/standard/mdbootstrap/2515536?view=side*/
+/*
+#carouselExampleIndicators1,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+          height: 100vh;
+        }
+
+.carousel-item:nth-child(1) {
+            background-image: url('../assets/images/slide1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+          }
+.carousel-item:nth-child(2) {
+            background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+          }
+.carousel-item:nth-child(3) {
+            background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+          }
+
+*/
+
+  /*Style for full sized backgorunf image*/
+  /*
+  #intro {
+        background-image: url("https://mdbootstrap.com/img/new/fluid/city/018.jpg");
+        height: 100vh;
+      }
+
+      /* Height for devices larger than 576px */ /*
+      @media (min-width: 992px) {
+        #intro {
+          margin-top: -58.59px;
+        }
+      }
+
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+      */
+
+      #bodyContent{
+        padding-left: 2em;
+        padding-right: 2em;
+      }
