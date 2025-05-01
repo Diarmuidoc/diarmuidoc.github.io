@@ -220,6 +220,12 @@ html {
   text-align: center;
 }
 
+.githubPhoto{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 /* Carousel from example online at https://mdbootstrap.com/snippets/standard/mdbootstrap/2515536?view=side*/
 /*
 #carouselExampleIndicators1,
