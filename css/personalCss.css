@@ -226,6 +226,13 @@ html {
   margin-right: auto;
   width: 50%;
 }
+
+.title{
+  text-align: center;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
 /* Carousel from example online at https://mdbootstrap.com/snippets/standard/mdbootstrap/2515536?view=side*/
 /*
 #carouselExampleIndicators1,
